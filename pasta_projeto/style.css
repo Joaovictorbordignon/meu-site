@@ -93,3 +93,44 @@ a:hover {
   display: flex;
   gap: var(--espaco-medio);
 }
+
+.conteudo {
+  max-width: var(--largura-maxima);
+  margin: 0 auto;
+  padding: var(--espaco-grande) var(--espaco-medio);
+}
+ 
+.conteudo h1 {
+  font-size: 1.6rem;
+  margin-bottom: var(--espaco-medio);
+}
+ 
+.lista-publicacoes {
+  list-style-position: inside;
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-medio);
+}
+ 
+.publicacao h2 {
+  font-size: 1.1rem;
+  font-weight: normal;
+  display: inline;
+}
+ 
+.publicacao .meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espaco-pequeno);
+  font-size: 0.85rem;
+  color: var(--cor-meta);
+  margin-top: 4px;
+}
+ 
+.paginacao {
+  display: flex;
+  justify-content: space-between;
+  margin-top: var(--espaco-grande);
+  padding-top: var(--espaco-medio);
+  border-top: 1px solid var(--cor-borda);
+}
