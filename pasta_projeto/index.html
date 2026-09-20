@@ -1,11 +1,176 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TabeNews-Notícias</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TabNews - clone</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+  <header class="cabecalho">
+    <a class="logo" href="index.html">TabNews</a>
+
+    <nav class="navegacao" aria-label="Navegação principal">
+      <ul>
+        <li><a href="#">Relevantes</a></li>
+        <li><a href="#">Recentes</a></li>
+      </ul>
+    </nav>
+
+    <form class="busca" action="#" method="get" role="search">
+      <label for="campo-busca">Buscar no TabNews</label>
+      <input type="search" id="campo-busca" name="q" placeholder="Pesquisar...">
+      <button type="submit">Buscar</button>
+    </form>
+
+    <div class="acoes-usuario">
+      <a href="#">Login</a>
+      <a href="#">Cadastrar</a>
+    </div>
+  </header>
+
+  <main class="conteudo">
+    <h1>Publicações relevantes de hoje</h1>
+
+    <ol class="lista-publicacoes">
+      <li>
+        <article class="publicacao">
+          <h2><a href="#">O paradoxo da performance no frontend e o pato</a></h2>
+          <p class="meta">
+            <span class="tabcoins">18 tabcoins</span>
+            <span class="comentarios">1 comentários</span>
+            <span class="autor">autor</span>
+            <time datetime="2026-09-18">há 1 dia atrás</time>
+          </p>
+        </article>
+      </li>
+
+      <li>
+        <article class="publicacao">
+          <h2><a href="#">Como projetar dados de mercado cripto que continuam confiáveis quando a API falha</a></h2>
+          <p class="meta">
+            <span class="tabcoins">13 tabcoins</span>
+            <span class="comentarios">6 comentários</span>
+            <span class="autor">autor</span>
+            <time datetime="2026-09-17">há 2 dias atrás</time>
+          </p>
+        </article>
+      </li>
+      <li>
+        <article class="publicacao">
+          <h2><a href="#">Fiz meu blog com IA para escrever sem IA</a></h2>
+          <p class="meta">
+            <span class="tabcoins">21 tabcoins</span>
+            <span class="comentarios">2 comentários</span>
+            <span class="autor">autor</span>
+            <time datetime="2026-09-19">há 6 horas</time>
+          </p>
+        </article>
+      </li>
+      <li>
+        <article class="publicacao">
+          <h2><a href="#">Acabei com o SPAM denunciando para esses 3 endereços</a></h2>
+          <p class="meta">
+            <span class="tabcoins">12 tabcoins</span>
+            <span class="comentarios">4 comentários</span>
+            <span class="autor">autor</span>
+            <time datetime="2026-09-15">há 4 dias atrás</time>
+          </p>
+        </article>
+      </li>
+      <li>
+        <article class="publicacao">
+          <h2><a href="#">Programando em Alto Nível na era da IA: É possível?</a></h2>
+          <p class="meta">
+            <span class="tabcoins">15 tabcoins</span>
+            <span class="comentarios">3 comentários</span>
+            <span class="autor">autor</span>
+            <time datetime="2026-09-17">há 2 dias atrás</time>
+          </p>
+        </article>
+      </li>
+      <li>
+        <article class="publicacao">
+          <h2><a href="#">Freelances estão mais difíceis de conseguir?</a></h2>
+          <p class="meta">
+            <span class="tabcoins">20 tabcoins</span>
+            <span class="comentarios">0 comentários</span>
+            <span class="autor">autor</span>
+            <time datetime="2026-09-19">há 10 horas</time>
+          </p>
+        </article>
+      </li>
+      <li>
+        <article class="publicacao">
+          <h2><a href="#">Ironwood: Depois de 30 anos escutando que Java é lento</a></h2>
+          <p class="meta">
+            <span class="tabcoins">11 tabcoins</span>
+            <span class="comentarios">1 comentários</span>
+            <span class="autor">autor</span>
+            <time datetime="2026-09-19">há 20 horas</time>
+          </p>
+        </article>
+      </li>
+      <li>
+        <article class="publicacao">
+          <h2><a href="#">Estou desenvolvendo uma alternativa brasileira ao Heroku, Railway e Vercel</a></h2>
+          <p class="meta">
+            <span class="tabcoins">10 tabcoins</span>
+            <span class="comentarios">5 comentários</span>
+            <span class="autor">autor</span>
+            <time datetime="2026-09-14">há 5 dias atrás</time>
+          </p>
+        </article>
+      </li>
+      <li>
+        <article class="publicacao">
+          <h2><a href="#">E se o Node.js tivesse Workers persistentes?</a></h2>
+          <p class="meta">
+            <span class="tabcoins">12 tabcoins</span>
+            <span class="comentarios">4 comentários</span>
+            <span class="autor">autor</span>
+            <time datetime="2026-09-19">há 2 horas</time>
+          </p>
+        </article>
+      </li>
+      <li>
+        <article class="publicacao">
+          <h2><a href="#">Projetando um Rate Limiter Global: Guia Completo de System Design</a></h2>
+          <p class="meta">
+            <span class="tabcoins">16 tabcoins</span>
+            <span class="comentarios">2 comentários</span>
+            <span class="autor">autor</span>
+            <time datetime="2026-09-19">há 3 horas</time>
+          </p>
+        </article>
+      </li>
+    </ol>
+
+    <nav class="paginacao" aria-label="Paginação">
+      <a href="#">Página anterior</a>
+      <a href="#">Próxima página</a>
+    </nav>
+  </main>
+
+  <section class="sobre-clone" aria-labelledby="titulo-sobre">
+    <h2 id="titulo-sobre">Sobre este clone</h2>
+    <p>
+      Esta página é uma reprodução da interface do TabNews, feita como
+      trabalho da disciplina de Front-End.
+    </p>
+  </section>
+
+  <footer class="rodape">
+    <p>Clone desenvolvido por João Victor Bordignon e João Rafael Dias Reis — Matrícula 1137717, 1139594</p>
+    <nav aria-label="Links do rodapé">
+      <ul>
+        <li><a href="#https://github.com/Joaovictorbordignon">Sobre</a></li>
+        <li><a href="mailto:joaovictorbordignon@gmail.com">Contato</a></li>
+        <li><a href="https://www.tabnews.com.br/">Site original</a></li>
+      </ul>
+    </nav>
+  </footer>
+
 </body>
 </html>
