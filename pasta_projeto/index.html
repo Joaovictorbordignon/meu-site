@@ -9,24 +9,35 @@
 <body>
 
   <header class="cabecalho">
-    <a class="logo" href="index.html">TabNews</a>
+    <div class="cabecalho-esquerda">
+      <a class="logo" href="index.html">TabNews</a>
 
-    <nav class="navegacao" aria-label="Navegação principal">
-      <ul>
-        <li><a href="#">Relevantes</a></li>
-        <li><a href="#">Recentes</a></li>
-      </ul>
-    </nav>
+      <nav class="navegacao" aria-label="Navegação principal">
+        <ul>
+          <li><a href="#">Relevantes</a></li>
+          <li><a href="#">Recentes</a></li>
+        </ul>
+      </nav>
+    </div>
 
+    <div class="cabecalho-direita">
     <form class="busca" action="#" method="get" role="search">
-      <label for="campo-busca">Buscar no TabNews</label>
+      <label for="campo-busca" class="sr-only">Buscar no TabNews</label>
+ 
+      <svg class="icone-busca" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false">
+        <circle cx="10" cy="10" r="7" fill="none" stroke="currentColor" stroke-width="2"></circle>
+        <line x1="21" y1="21" x2="15.5" y2="15.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"></line>
+      </svg>
+ 
       <input type="search" id="campo-busca" name="q" placeholder="Pesquisar...">
-      <button type="submit">Buscar</button>
+ 
+      <button type="submit" class="sr-only">Buscar</button>
     </form>
 
-    <div class="acoes-usuario">
-      <a href="#">Login</a>
-      <a href="#">Cadastrar</a>
+      <div class="acoes-usuario">
+        <a href="#">Login</a>
+        <a href="#">Cadastrar</a>
+      </div>
     </div>
   </header>
 
