@@ -38,3 +38,58 @@ a:hover {
   color: var(--cor-link-hover);
   text-decoration: underline;
 }
+
+.cabecalho {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-pequeno);
+  background-color: var(--cor-header-bg);
+  border-bottom: 1px solid var(--cor-borda);
+  padding: var(--espaco-medio);
+}
+ 
+.cabecalho .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--cor-texto);
+}
+ 
+.navegacao ul {
+  display: flex;
+  gap: var(--espaco-medio);
+  list-style: none;
+}
+ 
+.busca {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+ 
+.busca label {
+  font-size: 0.9rem;
+}
+ 
+.busca input,
+.busca button {
+  padding: var(--espaco-pequeno);
+  border: 1px solid var(--cor-borda);
+  border-radius: 4px;
+  font-family: inherit;
+}
+ 
+.busca button {
+  background-color: var(--cor-link);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+ 
+.busca button:hover {
+  background-color: var(--cor-link-hover);
+}
+ 
+.acoes-usuario {
+  display: flex;
+  gap: var(--espaco-medio);
+}
