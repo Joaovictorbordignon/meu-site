@@ -1,0 +1,40 @@
+:root {
+  --cor-fundo: #f5f5f5;
+  --cor-texto: #1a1a1a;
+  --cor-link: #0070f3;
+  --cor-link-hover: #0050c7;
+  --cor-borda: #e0e0e0;
+  --cor-meta: #666666;
+  --cor-header-bg: #ffffff;
+ 
+  --fonte-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+ 
+  --espaco-pequeno: 8px;
+  --espaco-medio: 16px;
+  --espaco-grande: 32px;
+ 
+  --largura-maxima: 1000px;
+}
+ 
+* {
+  box-sizing: border-box; /* padding e borda não somam à largura definida */
+  margin: 0;
+  padding: 0;
+}
+ 
+body {
+  font-family: var(--fonte-base);
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  line-height: 1.5;
+}
+
+a {
+  color: var(--cor-link);
+  text-decoration: none;
+}
+ 
+a:hover {
+  color: var(--cor-link-hover);
+  text-decoration: underline;
+}
