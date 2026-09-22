@@ -8,7 +8,7 @@
 ## Checklist da Parte 1
 
 - [x] **1.1 Estrutura semântica e acessível** — header, nav, main, article, footer; imagens com `alt`; formulário de busca com `label` associado (visualmente escondido via `.sr-only`, mas acessível).
-- [x] **1.2 Fidelidade visual** — cores extraídas via DevTools do site original (`#010409` fundo, `#25292e` cabeçalho); mesma organização de cabeçalho, lista de posts e rodapé.
+- [x] **1.2 Fidelidade visual** — cores extraídas via DevTools do site original (`#121212` fundo, `#25292e` cabeçalho); mesma organização de cabeçalho, lista de posts e rodapé.
 - [x] **1.3 CSS: seletores, box model e variáveis** — seletores de classe, descendente, pseudo-classe e pseudo-elemento (`::before` para numeração via `counter()`); variáveis no `:root`; `box-sizing: border-box`.
 - [x] **1.4 Responsividade** — mobile first com Flexbox; media query `min-width: 768px` reorganiza cabeçalho e rodapé em telas maiores.
 - [x] **1.5 Personalização** — seção "Sobre este clone" e rodapé com nomes/matrículas e links de contato reais, sem equivalente no site original.
